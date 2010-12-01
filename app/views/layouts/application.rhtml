@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title><%= @page_title %> | Insert League Name</title>
+    <%= stylesheet_link_tag 'application', 'jquery', :media => 'screen' %> 
+  </head>
+  
+<body id="<%= @active %>">
+
+  <%= render :partial => '/partials/header' %>
+  
+  <div id="container">
+    <div id="content" class="clearfix">      
+      <%= yield %>
+      
+      <%= render :partial => '/partials/footer' %>
+    </div>
+  </div>
+
+<%= javascript_include_tag 'jquery-1.4.4.min', 'application', 'plugins' %>
+</body>
+</html>

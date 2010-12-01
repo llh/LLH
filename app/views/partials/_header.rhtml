@@ -1,0 +1,23 @@
+<div id="brand">
+  <div class="width">
+    <%= link_to 'Light the Lamp Hockey', league_home_path() %>
+  </div>
+</div>  
+
+<div id="header">
+  <div class="width">
+    <h1><%= link_to 'Insert League Name', league_home_path() %></h1>
+  
+    <form>
+      <fieldset>
+        <legend>Search Players</legend>
+        <div class="search_container">
+          <input type="text" title="Search Players" />
+          <button type="submit" value="Search">Search</button>
+        </div>
+      </fieldset>
+    </form>  
+  </div>  
+</div>  
+
+<%= render :partial => '/partials/navigation' %>

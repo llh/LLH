@@ -1,0 +1,47 @@
+<div id="nav">
+  <div class="width">
+    <ul>
+      <li class="btn_league"><%= link_to 'League', league_home_path() %>
+        <ul class="subnav clearfix">
+          <li><%= link_to 'Transactions', transactions_path() %></li>
+          <li><%= link_to 'Draft Picks', draft_picks_path() %></li>
+          <li><%= link_to 'Salary Caps', salary_caps_path() %></li>
+          <li><%= link_to 'Rules', rules_path() %></li>
+        </ul>
+      </li>
+      <li class="btn_team"><%= link_to 'Team', team_path() %>
+        <ul class="subnav clearfix">
+          <li><%= link_to 'Set Lineup', lineup_path() %></li>
+          <li><%= link_to 'Add &amp; Drop', "" %></li>
+          <li><%= link_to 'Trade', "" %></li>
+          <li><%= link_to 'Contracts', contracts_path() %></li>
+        </ul>
+      </li>
+      <li class="btn_scores"><%= link_to 'Scores', scores_path() %>
+        <ul class="subnav clearfix">
+          <li><%= link_to 'Gamecenter', lineup_path() %></li>
+        </ul>
+      </li>
+      <li class="btn_standings"><%= link_to 'Standings', standings_path() %>
+        <ul class="subnav clearfix">
+          <li><%= link_to 'Division', standings_path() %></li>
+          <li><%= link_to 'Conference', standings_conf_path() %></li>
+        </ul>
+      </li>
+      <li class="btn_statistics"><%= link_to 'Statistics', statistics_path() %>
+        <ul class="subnav clearfix">
+          <li><%= link_to 'Offensive', "" %></li>
+          <li><%= link_to 'Goalies', "" %></li>
+          <li><%= link_to 'Team', "" %></li>
+        </ul>
+      </li>
+      <li class="btn_schedule"><%= link_to 'Schedule', schedule_path() %>
+        <ul class="subnav clearfix">
+          <li><%= link_to 'Team', "" %></li>
+          <li><%= link_to 'League', "" %></li>
+        </ul>
+      </li>
+      <li class="btn_commish"><%= link_to 'Commish', "" %></li>
+    </ul>
+  </div>
+</div>

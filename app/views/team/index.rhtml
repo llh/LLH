@@ -1,0 +1,191 @@
+<select id="change_team">
+  <option value="">Change Team</option>
+</select>
+<h2>Team Home</h2>
+
+<%= render :partial => '/scores/scoreboard' %>
+<dl class="team_info">
+  <dt><img src="http://cdn.nhl.com/penguins/images/logos/large.png" alt="" width="100" height="52" /></dt>
+  <dd>
+    <h3>Pittsburgh Penguins</h3>
+    <p>Salary Cap: $60</p>
+  </dd>
+</dl>
+
+<p class="team_record">Record: 9-0-1</p>
+<div class="clear"></div>
+
+<div class="tabs">
+  <ul>
+    <li><%= link_to "Active", "#active" %></li>
+    <li><%= link_to "Reserves", "#reserves" %></li>
+    <li><%= link_to "Farm Team", "#farm_team" %></li>
+    <li><%= link_to "Exempt", "#exempt" %></li>
+    <li><%= link_to "Injury Reserve", "#injury_reserve" %></li>
+  </ul>  
+
+  <div id="active">
+    <table class="tbl_roster" summary="Active Players">
+      <thead>
+        <tr>
+          <th scope="col" class="th_player_name">Name</th>
+          <th scope="col" class="th_player_team">Team</th>
+          <th scope="col" class="th_player_pos">Pos</th>
+          <th scope="col" class="th_signed">Signed</th>
+          <th scope="col" class="th_salary_yr">2010-11</th>
+          <th scope="col" class="th_salary_yr">2011-12</th>
+          <th scope="col" class="th_salary_yr">2012-13</th>
+          <th scope="col" class="th_salary_yr">2013-14</th>
+          <th scope="col" class="th_salary_yr">2014-15</th>
+          <th scope="col" class="th_status">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><%= link_to "Sidney Crosby", player_profile_path() %></td>
+          <td>PIT</td>
+          <td>C</td>
+          <td>4</td>
+          <td>$3.00</td>
+          <td>$3.25</td>
+          <td>$3.50</td>
+          <td>$4.00</td>
+          <td>$4.50</td>
+          <td>
+            <select>
+              <option value="">Active</option>
+              <option value="">Reserve</option>
+              <option value="">Farm Team</option>
+              <option value="">Injury Reserve</option>
+            </select>  
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">&nbsp;</td>
+          <td>$3.00</td>
+          <td>$3.25</td>
+          <td>$3.50</td>
+          <td>$3.75</td>
+          <td>$4.00</td>
+          <td>&nbsp;</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>  
+  
+  <div id="reserves">
+    <table class="tbl_roster" summary="Reserve Players">
+      <thead>
+        <tr>
+          <th scope="col" class="th_player_name">Name</th>
+          <th scope="col" class="th_player_team">Team</th>
+          <th scope="col" class="th_player_pos">Pos</th>
+          <th scope="col" class="th_signed">Signed</th>
+          <th scope="col" class="th_salary_yr">2010-11</th>
+          <th scope="col" class="th_salary_yr">2011-12</th>
+          <th scope="col" class="th_salary_yr">2012-13</th>
+          <th scope="col" class="th_salary_yr">2013-14</th>
+          <th scope="col" class="th_salary_yr">2014-15</th>
+          <th scope="col" class="th_status">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><%= link_to "Sidney Crosby", player_profile_path() %></td>
+          <td>PIT</td>
+          <td>C</td>
+          <td>4</td>
+          <td>$3.00</td>
+          <td>$3.25</td>
+          <td>$3.50</td>
+          <td>$4.00</td>
+          <td>$4.50</td>
+          <td>
+            <select>
+              <option value="">Active</option>
+              <option value="">Reserve</option>
+              <option value="">Farm Team</option>
+              <option value="">Injury Reserve</option>
+            </select>  
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">&nbsp;</td>
+          <td>$3.00</td>
+          <td>$3.25</td>
+          <td>$3.50</td>
+          <td>$3.75</td>
+          <td>$4.00</td>
+          <td>&nbsp;</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <div id="farm_team">
+    <table class="tbl_roster" summary="Farm Team Players">
+      <thead>
+        <tr>
+          <th scope="col" class="th_player_name">Name</th>
+          <th scope="col" class="th_player_team">Team</th>
+          <th scope="col" class="th_player_pos">Pos</th>
+          <th scope="col" class="th_signed">Signed</th>
+          <th scope="col" class="th_salary_yr">2010-11</th>
+          <th scope="col" class="th_salary_yr">2011-12</th>
+          <th scope="col" class="th_salary_yr">2012-13</th>
+          <th scope="col" class="th_salary_yr">2013-14</th>
+          <th scope="col" class="th_salary_yr">2014-15</th>
+          <th scope="col" class="th_status">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><%= link_to "Sidney Crosby", player_profile_path() %></td>
+          <td>PIT</td>
+          <td>C</td>
+          <td>4</td>
+          <td>$3.00</td>
+          <td>$3.25</td>
+          <td>$3.50</td>
+          <td>$4.00</td>
+          <td>$4.50</td>
+          <td>
+            <select>
+              <option value="">Active</option>
+              <option value="">Reserve</option>
+              <option value="">Farm Team</option>
+              <option value="">Injury Reserve</option>
+            </select>  
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">&nbsp;</td>
+          <td>$3.00</td>
+          <td>$3.25</td>
+          <td>$3.50</td>
+          <td>$3.75</td>
+          <td>$4.00</td>
+          <td>&nbsp;</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <div id="exempt">
+    <p>No Players Currently on your Exempt List</p>
+  </div>
+
+  <div id="injury_reserve">
+    <p>No Players Currently on Injury Reserve</p>
+  </div>
+
+</div>
+  
+<button type="submit" value="Update Roster">Update Roster</button>
+<a href="" class="btn_cancel">Cancel</a>
